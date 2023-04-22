@@ -1,0 +1,22 @@
+.divContainer {
+    font-size:30px;
+    color:black;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    width:100%;
+
+}
+
+.ulContainer {
+    display: flex;
+    padding: 30px;
+}
+
+.liContainer {
+    padding: 20px;
+    margin: 0 20px;
+    text-decoration: underline;
+}
+
+.liContainer:hover {
+    color:red;
+}
