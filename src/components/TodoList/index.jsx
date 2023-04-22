@@ -27,10 +27,7 @@ const ToDolist = () => {
   };
 
   const addTask = () => {
-    setTaskList([
-      ...tasksList,
-      { id: uuid(), text: inputTask, status: false },
-    ]);
+    setTaskList([...tasksList, { id: uuid(), text: inputTask, status: false }]);
     setInput("");
   };
 
@@ -46,25 +43,27 @@ const ToDolist = () => {
         text={tasks.text}
         status={tasks.status}
         deleteTask={removeTask}
-        setStatus = {changeStatusTask}
+        setStatus={changeStatusTask}
       />
     </li>
   ));
 
   return (
-    <div>
-      <input
-        type="text"
-        className={styles.inputTask}
-        onChange={addTaskInput}
-        placeholder="Input Task"
-        name="addtask"
-        value={inputTask}
-      ></input>
+    <div className={styles.toDoContainer}>
+      <div className={styles.addTaskContainer}>
+        <input
+          type="text"
+          className={styles.inputTask}
+          onChange={addTaskInput}
+          placeholder="Input Task"
+          name="addtask"
+          value={inputTask}
+        ></input>
+        <button className={styles.btnClick} onClick={addTask}>
+          Add Task
+        </button>
+      </div>
       <div> {taskList}</div>
-      <button className={styles.btnClick} onClick={addTask}>
-        Add Task
-      </button>
     </div>
   );
 };

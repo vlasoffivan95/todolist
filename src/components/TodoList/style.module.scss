@@ -4,10 +4,33 @@
     font-size:20px;
     padding:20px;
     border-radius: 20px;
+    text-align: center;
 }
 
 .inputTask {
     border:2px solid black;
     padding:10px;
     font-size:20px;
+    width:60%;
+}
+
+.toDoContainer {
+width:40vw;
+margin: 30px auto;
+border:2px solid black;
+padding: 20px;;
+display: flex;
+flex-direction: column;
+}
+
+.addTaskContainer {
+    display:flex;
+    justify-content: space-between;
+    width:82%;
+    margin:30px auto;
+    padding: 10px;
+}
+
+li{
+    list-style-type: none;
 }
