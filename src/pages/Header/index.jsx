@@ -7,7 +7,8 @@ const Header = () => {
     <div className={styles.divContainer}>
         <ul className={styles.ulContainer}>
       <li className={styles.liContainer}><Link to="/"> Home</Link></li>
-      <li className={styles.liContainer}><Link to="/todolist"> ToDoList</Link></li>
+      <li className={styles.liContainer}><Link to="/todolist"> ToDoList UseState</Link></li>
+      <li className={styles.liContainer}><Link to="/todolistreducer"> ToDoList UseReducer</Link></li>
       </ul>
     </div>
   );
