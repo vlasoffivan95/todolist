@@ -33,7 +33,7 @@ function reducer(state, action) {
         console.log(obj.id);
         console.log(action.payload);
         if (obj.id === action.payload) {
-          return { ...obj, status: true };
+          return { ...obj, status: !obj.status };
         }
         return obj;
       });

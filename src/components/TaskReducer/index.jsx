@@ -10,7 +10,7 @@ const TaskReducer = (props) => {
       <button className={styles.btnDel} onClick={() => dispatch({ type: "delete_task", payload: index })}>
         Delete
       </button>
-      <button className={styles.btnDone} onClick={() => dispatch({ type: "done_task", payload: value.id })}>Done</button>
+      <button className={styles.btnDone} onClick={() => dispatch({ type: "done_task", payload: value.id })}>{!value.status?"Done":"In Work"}</button>
       </div>
     </li>
   ));
